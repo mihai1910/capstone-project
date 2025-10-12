@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
-@theme {
-	--color-primary-green: 495E57h;
+@layer base {
+	@apply bg-black;
 }
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+	--color-green-primary: #495E57;
+}
+
