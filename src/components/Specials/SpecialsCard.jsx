@@ -9,7 +9,7 @@ export const SpecialsCard = (props) => {
 
             <div className='flex justify-between max-md:px-2 lg:px-8 lg:py-4'>
             <h5 className="text-black font-bold font-serif text-mobile-sm lg:text-md">{props.dishName}</h5>
-            <p className="text-yellow-primary text-mobile-sm md:text-md">${props.price}</p>
+            <p className="text-yellow-600 text-shadow-xl text-mobile-sm md:text-md">${props.price}</p>
             </div>
 
             <p className="text-black px-2 md:px-8 text-[9px] lg:text-md py-2 lg:my-4">{props.description}</p>
