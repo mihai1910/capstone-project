@@ -7,8 +7,8 @@ import lemonDessert from '../../assets/lemon-dessert.svg'
 export default function Specials(){
     return(
         <section className="bg-white-primary flex flex-col pt-15 md:pt-18 lg:pt-30 md:px-45 lg:px-70 pb-10 md:pb-15 lg:pb-20">
-            <div className="flex justify-center items-center gap-30 lg:gap-180 ">
-            <h1 className="text-black text-mobile-xl lg:text-mobile-2xl">This Week's Specials</h1>
+            <div className="flex justify-center items-center gap-30 lg:gap-150 ">
+            <h1 className="text-black text-mobile-xl lg:text-2xl">This Week's Specials</h1>
             <Button className='m-0'>Order Online</Button>
             </div>
 
