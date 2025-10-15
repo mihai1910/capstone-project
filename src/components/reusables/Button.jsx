@@ -1,3 +1,3 @@
-export const Button = ({children}) => {
-    return <button className="primarybutton">{children}</button>
+export const Button = ({children, className = ''}) => {
+    return <button className={`primarybutton ${className}`}>{children}</button>
 }

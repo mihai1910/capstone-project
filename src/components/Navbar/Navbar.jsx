@@ -7,7 +7,7 @@ export default function Navbar(){
     const [open, setOpen] = useState(false);
 
         return(
-            <nav className='flex justify-between items-center md:justify-around p-2 md:p-4 bg-white-primary'>
+            <nav className='flex justify-between items-center md:justify-around p-2 md:p-4 bg-white-primary transform'>
                 <LogoDisplay/>
                 <DropDownMenu open={open} setOpen={setOpen}/>
                 <NavLinks open={open}/>

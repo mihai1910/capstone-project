@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter as Router } from 'react-router-dom'
 import App from './App.jsx'
-import './output.css'
+import './styles/output.css'
 
 createRoot(document.getElementById('root')).render(
   <Router>
@@ -10,6 +10,6 @@ createRoot(document.getElementById('root')).render(
       <App />
     </StrictMode>
   </Router>
-  //npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css -always
+  //npx @tailwindcss/cli -i ./src/styles/input.css -o ./src/styles/output.css -always
   //npx vite
 )
