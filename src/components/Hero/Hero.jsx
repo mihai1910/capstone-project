@@ -3,7 +3,7 @@ import { HeroText } from "./HeroText"
 
 export default function Hero(){
     return(
-        <section className="flex bg-green-primary justify-center gap-2 xl:gap-30 px-2" >
+        <section className="flex justify-center w-full bg-green-primary  gap-2 xl:gap-30 px-2 " >
         <HeroText/>
         <HeroImage/>
         </section>

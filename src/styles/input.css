@@ -9,32 +9,46 @@
     --color-green-primary: #495E57;
     --color-yellow-primary: #F4CE14;
     --color-white-primary: #EDEFEE;
-    --text-2xl=
+    --color-gray-specials: #D9D9D9;
+
+  --text-sm: 1rem;      /* 16px */
+  --text-md: 1.125rem;  /* 18px */
+  --text-lg: 1.25rem;   /* 20px */
+  --text-xl: 2.5rem;    /* 40px */
+  --text-2xl: 4rem;     /* 64px */
+
+  /* Mobile (≈430px) */
+  --text-mobile-sm: 0.75rem;   /* 14px */
+  --text-mobile-md: 0.875rem;       /* 16px */
+  --text-mobile-lg: 1rem;   /* 18px */
+  --text-mobile-xl: 1.75rem;    /* 28px */
+  --text-mobile-2xl: 2.5rem;    /* 40px */
+
 }
 
 @layer base{
     h1{
-        @apply font-markazi text-3xl md:text-7xl text-yellow-primary;
+        @apply font-markazi text-mobile-2xl md:text-2xl text-yellow-primary;
     }
     h2{
-        @apply font-markazi text-xl md:text-5xl text-white-primary;
+        @apply font-markazi text-mobile-xl md:text-xl text-white-primary;
     }
     p{
-        @apply font-karla text-sm md:text-lg text-white-primary;
+        @apply font-karla text-mobile-md md:text-lg text-white-primary;
     }
 
 }
 
 @layer components{
     .navlinks{
-        @apply font-karla text-[18px] 
+        @apply font-karla text-mobile-md lg:text-md 
         px-4 py-2 rounded-2xl
         active:bg-white-primary active:text-black
          md:active:bg-green-primary md:active:text-white duration-250
          md:hover:bg-green-primary md:hover:text-white  md:hover:transition-colors  md:hover:scale-105 md:active:scale-100 duration-250
     }
     .primarybutton{
-        @apply bg-yellow-primary md:text-lg font-medium text-black 
+        @apply bg-yellow-primary text-mobile-md lg:text-lg font-medium text-black 
         px-2 md:px-6 md:py-1 mb-10 rounded-2xl shadow-md shadow-gray-800
         md:hover:scale-105 duration-250 md:active:scale-100
         active:scale-95
