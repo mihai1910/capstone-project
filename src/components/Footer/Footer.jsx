@@ -1,9 +1,9 @@
 import { FooterLogo } from './FooterLogo'
 import { FooterLinks } from './FooterLinks'
 
-export default function Footer() {
+export default function Footer({className=''}) {
     return(
-    <footer className='flex bg-green-primary justify-center py-5 lg:py-20 gap-10'>
+    <footer className={`flex justify-center w-full py-5 lg:py-10 gap-10 bg-green-primary ${className}`}>
         <FooterLogo />
         <FooterLinks />
     </footer>

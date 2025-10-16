@@ -10,7 +10,6 @@ export default function Reviews() {
             {reviews.map((review, i) => (
                 <div key={i} className={i === 3 ? "hidden lg:block" : "block"}>
             <ReviewsCard 
-                key={i}
                 title={review.title} 
                 description={review.description}
                 img={review.img}

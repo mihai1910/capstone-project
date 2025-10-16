@@ -11,7 +11,7 @@ export const FooterLinks = () => {
                 <li className='navlinks text-[10px] lg:text-[20px] py-0.5'><Link to='/'>Home</Link></li>
                 <li className='navlinks text-[10px] lg:text-[20px] py-0.5'><Link to='/about'>About</Link></li>
                 <li className='navlinks text-[10px] lg:text-[20px] py-0.5'><Link to='/menu'>Menu</Link></li>
-                <li className='navlinks text-[10px] lg:text-[20px] py-0.5'><Link to='/reservations'>Reservations</Link></li>
+                <li className='navlinks text-[10px] lg:text-[20px] py-0.5'><Link to='/bookings'>Reservations</Link></li>
                 <li className='navlinks text-[10px] lg:text-[20px] py-0.5'><Link to='/order'>Order Online</Link></li>
                 <li className='navlinks text-[10px] lg:text-[20px] py-0.5'><Link to='/login'>Login</Link></li>
             </ul>
