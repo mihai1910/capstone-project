@@ -15,7 +15,7 @@
   --text-md: 1.125rem;  /* 18px */
   --text-lg: 1.25rem;   /* 20px */
   --text-xl: 2.5rem;    /* 40px */
-  --text-2xl: 4rem;     /* 64px */
+  --text-2xl: 4rem;  /* 64px */
 
   /* Mobile (≈430px) */
   --text-mobile-sm: 0.75rem;   /* 14px */
@@ -34,7 +34,7 @@
         @apply font-markazi text-mobile-xl md:text-xl text-white-primary;
     }
     p{
-        @apply font-karla text-mobile-md md:text-lg text-white-primary;
+        @apply font-karla text-mobile-md md:text-md text-white-primary;
     }
 
 }
@@ -44,7 +44,7 @@
         @apply font-karla text-mobile-md lg:text-md 
         px-4 py-2 rounded-2xl
         active:bg-white-primary active:text-black
-         md:active:bg-green-primary md:active:text-white duration-250
+         md:active:bg-green-primary md:active:text-white
          md:hover:bg-green-primary md:hover:text-white  md:hover:transition-colors  md:hover:scale-105 md:active:scale-100 duration-250
     }
     .primarybutton{
