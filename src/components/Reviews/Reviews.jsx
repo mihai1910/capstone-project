@@ -3,7 +3,7 @@ import { reviews } from "./ReviewsData"
 
 export default function Reviews() {
     return(
-        <section className="flex flex-col items-center bg-green-primary pb-4">
+        <section className="flex flex-col items-center bg-green-primary pb-4 lg:pb-8">
             <h1 className="text-white-primary">Our customers love us!</h1>
 
             <div className="flex justify-center">
