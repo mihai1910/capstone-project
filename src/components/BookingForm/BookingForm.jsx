@@ -30,7 +30,7 @@ export default function BookingForm({ availableTimes, updateTimes }) {
 
     if (success) {
       alert('thank you for registering')
-      navigate('/thank-you');
+      navigate('/confirmation');
     } else {
       alert('Something went wrong. Please try again.');
     }
@@ -44,6 +44,7 @@ export default function BookingForm({ availableTimes, updateTimes }) {
         id="res-date" 
         className="font-karla text-black border-1 p-2 mx-2 lg:w-100 bg-white rounded-2xl"
         value={resDate}
+        required
         onChange={handleDateChange}
       />
 
@@ -52,6 +53,7 @@ export default function BookingForm({ availableTimes, updateTimes }) {
         id="res-time" 
         className="font-karla text-black border-1 p-2 mx-2 bg-white rounded-2xl z-2"
         value={resTime}
+        required
         onChange={(e) => setResTime(e.target.value)}
       >
         {availableTimes.map((time) => (
@@ -67,6 +69,7 @@ export default function BookingForm({ availableTimes, updateTimes }) {
         min="1" 
         max="10" 
         onChange={(e) => setGuests(e.target.value)} 
+        required
         value={guests}
         className="font-karla text-black border-1 p-2 mx-2 bg-white rounded-2xl" 
       />
@@ -76,6 +79,7 @@ export default function BookingForm({ availableTimes, updateTimes }) {
         id="occasion" 
         className="font-karla text-black border-1 p-2 mx-2 bg-white rounded-2xl" 
         value={occasion}
+        required
         onChange={(e) => setOccasion(e.target.value)}
       >
         <option value="Birthday">Birthday</option>
