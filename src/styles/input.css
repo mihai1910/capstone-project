@@ -53,4 +53,8 @@
         md:hover:scale-105 duration-250 md:active:scale-100
         active:scale-95
     }
+
+    .errormsg{
+        @apply font-semibold italic text-[14px]/2 text-red-500 -translate-y-4 mx-2
+    }
 }

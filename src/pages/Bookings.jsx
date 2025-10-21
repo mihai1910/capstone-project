@@ -23,7 +23,7 @@ const initializeTimes = () => {
 };
 
 export default function Bookings() {
-  const [availableTimes, dispatch] = useReducer(timesReducer, initializeTimes());
+  const [availableTimes, dispatch] = useReducer(timesReducer,[], initializeTimes);
 
   const updateTimes = (date) => {
     const newTimes = fetchAPI(new Date(date));
