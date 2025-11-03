@@ -1,9 +1,14 @@
 import { useNavigate } from "react-router-dom";
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Formik, Form, Field, ErrorMessage, FormikProps, FormikHelpers } from "formik";
 import * as Yup from "yup";
 import { fetchAPI, submitAPI } from "../api";
 
-export default function BookingForm({ availableTimes, updateTimes }) {
+interface BookingFormProps {
+  availableTimes: string[];
+  updateTimes: (date: string) => void;
+}
+
+export default function BookingForm({ availableTimes, updateTimes }: BookingFormProps) {
   const navigate = useNavigate();
 
   const validationSchema = Yup.object({
@@ -25,7 +30,17 @@ export default function BookingForm({ availableTimes, updateTimes }) {
     occasion: Yup.string().required("Occasion is required"),
   });
 
-  const initialValues = {
+interface UserData {
+  firstName: string;
+  lastName: string;
+  email: string;
+  resDate: string;
+  resTime: string;
+  guests: number;
+  occasion: string;
+}
+
+  const initialValues: UserData = {
     firstName: "",
     lastName: "",
     email: "",
@@ -35,7 +50,7 @@ export default function BookingForm({ availableTimes, updateTimes }) {
     occasion: "Birthday",
   };
 
-  const handleSubmit = (values, { resetForm }) => {
+  const handleSubmit = (values: UserData, { resetForm }: FormikHelpers <UserData>) => {
     const formData = {
       name: values.firstName + " " + values.lastName,
       email: values.email,
@@ -148,7 +163,7 @@ export default function BookingForm({ availableTimes, updateTimes }) {
             aria-invalid={errors.resDate && touched.resDate ? "true" : "false"}
             aria-describedby="resDate-error"
             className="font-karla text-black border-1 p-2 mx-2 bg-white rounded-2xl"
-            onChange={(e) => {
+            onChange={(e:React.ChangeEvent<HTMLInputElement>) => {
               const newDate = e.target.value;
               setFieldValue("resDate", newDate);
               updateTimes(newDate);
