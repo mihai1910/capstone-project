@@ -65,7 +65,7 @@ interface UserData {
     if (success) {
       alert("Thank you for registering!");
       resetForm();
-      navigate("/confirmation");
+      navigate("/confirmation"); 
     } else {
       alert("Something went wrong. Please try again.");
     }
@@ -83,7 +83,6 @@ interface UserData {
           role="form"
           aria-label="Reservation booking form"
         >
-          {/* --- Name Fields --- */}
           <div className="flex items-center" role="group" aria-labelledby="name-section">
             <div className="flex flex-col gap-5">
               <label

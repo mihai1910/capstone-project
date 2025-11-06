@@ -1,6 +1,11 @@
-    import { NavLink } from 'react-router-dom'
+    import React from 'react'
+import { NavLink } from 'react-router-dom'
+
+type NavLinksProps = {
+    open: boolean;
+}
     
-    export const NavLinks = ({open}) => { 
+    export const NavLinks: React.FC<NavLinksProps> = ({open}) => { 
         return(
             <ul aria-label='Main navigation menu' className={
             `flex ${open ? 'transition-all duration-300 ease-in-out' : 'transition-all duration-300 translate-x-50'}

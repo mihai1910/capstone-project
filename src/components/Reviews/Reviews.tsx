@@ -1,7 +1,8 @@
+import { JSX } from "react"
 import { ReviewsCard } from "./ReviewsCard"
 import { reviews } from "./ReviewsData"
 
-export default function Reviews() {
+export default function Reviews(): JSX.Element {
     return(
         <section className="flex flex-col items-center bg-green-primary pb-4 lg:pb-8">
             <h1 className="text-white-primary">Our customers love us!</h1>

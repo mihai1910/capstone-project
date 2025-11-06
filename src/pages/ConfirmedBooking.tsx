@@ -1,7 +1,8 @@
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
+import { JSX } from "react";
 
-export default function ConfirmedBooking(){
+export default function ConfirmedBooking(): JSX.Element{
     return(
         <>
         <Navbar />

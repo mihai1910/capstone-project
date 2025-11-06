@@ -1,4 +1,14 @@
-export const reviews = [
+import React from "react";
+
+interface Reviews{
+  title:string;
+  description:string;
+  img:string;
+  name:string;
+  date:string;
+}
+
+export const reviews: Reviews[] = [
   {
     title: "Amazing food and atmosphere!",
     description: "The Greek salad was super fresh and the lemon dressing was perfect. Definitely coming back!",

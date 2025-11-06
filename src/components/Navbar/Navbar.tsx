@@ -1,10 +1,14 @@
 import { LogoDisplay } from './LogoDisplay';
 import { DropDownMenu } from './DropDownMenu';
 import { NavLinks } from './NavLinks';
-import { useState } from 'react';
+import React, { JSX, useState } from 'react';
 
-export default function Navbar({className=''}){
-    const [open, setOpen] = useState(false);
+interface NavbarProps{
+    className?: string;
+}
+
+export default function Navbar ({className=''}: NavbarProps): JSX.Element{
+    const [open, setOpen] = useState<boolean>(false);
 
         return(
             <nav className={`flex justify-between items-center md:justify-around p-2 md:p-4 bg-white-primary transform ${className}`}>

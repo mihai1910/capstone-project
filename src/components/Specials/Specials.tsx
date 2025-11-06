@@ -3,8 +3,9 @@ import {SpecialsCard} from './SpecialsCard'
 import greekSalad from '../../assets/greekSalad.svg'
 import bruchetta from '../../assets/bruchetta.svg'
 import lemonDessert from '../../assets/lemon-dessert.svg'
+import { JSX } from "react"
 
-export default function Specials(){
+export default function Specials(): JSX.Element {
     return(
         <section className="bg-white-primary flex flex-col pt-10 md:pt-18 lg:pt-30 md:px-45 lg:px-70 pb-10 md:pb-15 lg:pb-20">
             <div className="flex justify-center items-center gap-20 lg:gap-150 ">
